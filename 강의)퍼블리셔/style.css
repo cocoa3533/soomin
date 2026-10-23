@@ -1,0 +1,119 @@
+
+html {
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: 'SUIT', sans-serif;
+    color: #333;
+    min-height: 300vh;
+}
+
+
+/* 전체 페이지 */
+body {
+    margin: 0;
+}
+
+/* 상단 캡슐형 헤더 */
+.gnb {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: calc(100% - 48px);
+    max-width: 1200px;
+
+    margin: 24px auto 0;
+    padding: 12px 32px;
+
+    background-color: #B3B3FF;
+    color: #fff;
+    border-radius: 999px;
+    box-sizing: border-box;
+
+    position: fixed;
+    top: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+}
+
+/* 왼쪽 로고 */
+.logo {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+/* 오른쪽 메뉴 영역 */
+.navigation ul {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* 메뉴 링크 */
+.menu {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* 마우스를 올렸을 때 */
+.menu:hover {
+    opacity: 0.7;
+}
+
+/* 본문 */
+main {
+    padding: 48px 32px;
+}
+
+/* 프로필 사진 */
+.profile {
+    width: 160px;
+    border-radius: 50%;
+}
+
+/* 하단 영역 */
+footer {
+    position: fixed;
+    bottom: 0px;
+
+    width: calc(100%);
+   
+    left: 50%;
+    transform: translateX(-50%);
+
+    padding: 24px 32px;
+    box-sizing: border-box;
+
+    background-color: #B3B3FF;
+    color: #fff;
+    z-index: 100;
+    border-radius: 0px;
+}
+
+/* 작은 화면 대응 */
+@media (max-width: 600px) {
+    .gnb {
+        margin: 16px 12px 0;
+        padding: 12px 20px;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .navigation ul {
+        gap: 12px;
+    }
+
+    .menu {
+        font-size: 13px;
+    }
+}

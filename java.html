@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript와 AOS 실습</title>
+
+  <!-- AOS CSS 불러오기 -->
+  <link
+    href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+    rel="stylesheet"
+  >
+
+  <style>
+    body {
+      margin: 0;
+      padding: 30px;
+      font-family: Arial, sans-serif;
+      background-color: #f5f7fa;
+    }
+
+    h1 {
+      font-size: 28px;
+      margin-bottom: 24px;
+    }
+
+    .box {
+      width: 300px;
+      height: 190px;
+      margin: 24px 0;
+      background-color: #d99f9f;
+      color: white;
+      border-radius: 12px;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      font-size: 32px;
+      font-weight: bold;
+    }
+
+      /* 페이지 가운데 정렬 */
+    .container {
+      width: 100%;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+  </style>
+</head>
+
+<body>
+  <h1>JavaScript와 AOS 실습</h1>
+
+  <div class="box" data-aos="fade-up">1</div>
+  <div class="box" data-aos="fade-left">2</div>
+  <div class="box" data-aos="fade-up">3</div>
+  <div class="box" data-aos="fade-left">4</div>
+  <div class="box" data-aos="fade-up">5</div>
+  <div class="box" data-aos="fade-left">6</div>
+  <div class="box" data-aos="fade-up">7</div>
+  <div class="box" data-aos="fade-left">8</div>
+  <div class="box" data-aos="fade-up">9</div>
+  <div class="box" data-aos="fade-left">10</div>
+
+  <!-- AOS JavaScript 불러오기 -->
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!-- AOS 초기화 -->
+  <script>
+    AOS.init({
+      duration: 800,
+      easing: 'ease',
+      once: false
+    });
+  </script>
+</body>
+</html>
